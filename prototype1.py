@@ -1,12 +1,13 @@
 a = [_, _, _]
 b = [_, _, _]
-c = [_, _, _] t
+c = [_, _, _] 
 X = ['top_left', 'top_middle', 'top_right', 'middle_left', 'middle_middle', 'middle_right', 'bottom_left', 'bottom_middle', 'bottom_right']
 print("Your moves are:", X)
+# had used for loop: for x in X; but that kept looping only x input so i had to change that.
 def xmove():
     x = input("enter your move for [X]: ")
     if x == 'top_left':
-        X.remove('top_left') 
+        X.remove('top_left') # list remove keeps the whole game from falling apart. you cannot choose same choices twice thanks to the error. and it was totally unintentional. but if it works, it works.
         a[0] = "X"
         print(a)
         print(b) 
@@ -116,7 +117,8 @@ def ymove():
         print(a)
         print(b) 
         print(c)
-while True:
+while True: # so that it keeps looping, althou it will keep looping. so i need to change that.
     xmove()
     ymove()
     
+# in summary. great progress. need to find a way to stop the game at some point, making it more compact, this looks like coding a big stone hammer for a tiny walnut. stay tuned!
