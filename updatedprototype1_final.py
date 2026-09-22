@@ -21,6 +21,11 @@ def winning_conditions():
     elif c[0] =='X' and  c[1] =='X' and c[2] == 'X':
         print ("the game is finished, X had won the game")
         exit()
+    elif a[1] == 'X' and b[1] == 'X' and c[1] == 'X':
+        print("the game has finished, x had won the game")
+        exit()
+    elif a[2] == 'X' and b[2] == 'X' and c[2] == 'X':
+        print("the game has finished, x had won the game")
     elif a[0] =='O' and  b[0] =='O' and c[0] == 'O':
         print ("the game is finished, O had won the game")
         exit()
@@ -39,8 +44,14 @@ def winning_conditions():
     elif c[0] =='O' and  c[1] =='O' and c[2] == 'O':
         print ("the game is finished, O had won the game")
         exit()
-    else:
-        print("no one has won the game, its a tie")
+    elif a[1] =='O' and  b[1] =='O' and c[1] == 'O':
+        print ("the game is finished, O had won the game")
+        exit()
+    elif a[2] =='O' and  b[2] =='O' and c[2] == 'O':
+        print ("the game is finished, O had won the game")
+        exit()
+    elif len(X) == 0:
+        print("its a tie")
 
 def xmove():
     print("Your moves are:", X)
