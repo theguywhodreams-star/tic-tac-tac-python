@@ -26,6 +26,7 @@ def winning_conditions():
         exit()
     elif a[2] == 'X' and b[2] == 'X' and c[2] == 'X':
         print("the game has finished, x had won the game")
+        exit()
     elif a[0] =='O' and  b[0] =='O' and c[0] == 'O':
         print ("the game is finished, O had won the game")
         exit()
